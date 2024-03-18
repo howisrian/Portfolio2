@@ -340,6 +340,7 @@ header.sticky{
 
 .s-icons i{
     font-size: 36px;
+    color: var(--main-color);
 }
 
 .box h3{
