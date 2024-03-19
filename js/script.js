@@ -30,3 +30,33 @@ window.addEventListener("scroll", function() {
 window.onload = () => {
     topo.classList.toggle ("hide-top");
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const titleElement = document.getElementById("type-name");
+    
+
+    const titleText = "Rian Santos";
+    
+
+    function typeText(text, element) {
+        let i = 0;
+        const interval = setInterval(function() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 400); // Ajuste conforme desejado
+    }
+
+    if (titleElement) {
+        typeText(titleText, titleElement);
+
+    } else {
+        console.error("Elemento não encontrado.");
+    }
+});
