@@ -37,25 +37,28 @@ window.onload = () => {
 document.addEventListener("DOMContentLoaded", function() {
     const titleElement = document.getElementById("type-name");
     
-
     const titleText = "Rian Santos";
-    
 
     function typeText(text, element) {
         let i = 0;
         const interval = setInterval(function() {
             if (i < text.length) {
-                element.innerHTML += text.charAt(i);
+                if (text.charAt(i) === " ") {
+                    element.innerHTML += "&nbsp;";
+                }
+                element.innerHTML += text.charAt(i) + "|";
+                setTimeout(function() {
+                    element.innerHTML = element.innerHTML.slice(0, -1);
+                }, 200);
                 i++;
             } else {
                 clearInterval(interval);
             }
-        }, 400); // Ajuste conforme desejado
+        }, 400);
     }
 
     if (titleElement) {
         typeText(titleText, titleElement);
-
     } else {
         console.error("Elemento não encontrado.");
     }
