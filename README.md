@@ -16,16 +16,16 @@ Portfólio web V2 - developed with the aim of presenting my technical skills and
 ![Home section](./.github/home.jpg)
 
 ### About me
-![Habilidades section](./.github/aboutme.jpg)
+![About section](./.github/aboutme.jpg)
 
 ### Skils
-![Sobre section](./.github/skils.jpg)
+![Skils section](./.github/skils.jpg)
 
 ### Portfolio
-![Projetos section](./.github/portfolio.jpeg)
+![Project section](./.github/portfolio.jpg)
 
 ### Experiences
-![Contato section](./.github/experiences.jpeg)
+![Experiences section](./.github/experiences.jpg)
 
 
 # Technologies 
