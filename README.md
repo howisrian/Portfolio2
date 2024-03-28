@@ -3,9 +3,6 @@
 
 # About project
 
-https://riansantos-dev.vercel.app/
-
-
 Portfólio web V2 - developed with the aim of presenting my technical skills and winning clients/jobs.
 
 
