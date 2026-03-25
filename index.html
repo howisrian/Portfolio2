@@ -1,278 +1,396 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rian Santos</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Rian Santos | Desenvolvedor Protheus, Node, React e SQL</title>
+    <meta name="description" content="Portfólio de Rian Santos, desenvolvedor com experiência em Protheus, ADVPL, Node.js, React, Python e SQL, com foco em automações, integrações e sistemas corporativos.">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-
-    <!--header design-->
-    <header>
-        <a href="#" class="logo"><span>RS</span>antos</a>
+    <header class="header">
+        <a href="#home" class="logo">Rian<span>Santos</span></a>
 
         <ul class="navlist">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#services">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
         </ul>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="header-actions">
+            <div class="lang-switcher" aria-label="Language selector">
+                <button type="button" class="lang-btn active" data-lang="pt">PT</button>
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <a class="header-cv" href="docs/cvrian1.pdf" download data-i18n="header.cv">Currículo</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
     </header>
 
-    <!--home section design-->
-    <section class="home" id="home">
-        <div class="home-div">
-            <div class="home-text">
-                <div class="slide">
-                    <span class="one">Hello</span>
-                    <span class="two">I'm</span>
+    <main>
+        <section class="hero reveal" id="home">
+            <div class="hero-content reveal-up">
+                <span class="eyebrow" data-i18n="hero.eyebrow">Disponível para novas oportunidades</span>
+                <h1 data-i18n="hero.title">Desenvolvedor focado em <span>sistemas corporativos</span>, integrações e automação de processos.</h1>
+                <p data-i18n="hero.text">
+                    Atuo com Protheus, ADVPL, Node.js, React, Python e SQL, desenvolvendo soluções que melhoram rotinas internas,
+                    reduzem trabalho manual e tornam o ambiente mais eficiente para o negócio.
+                </p>
+
+                <div class="hero-badges reveal-stagger">
+                    <span>ADVPL / TLPP</span>
+                    <span>Protheus</span>
+                    <span>Node.js</span>
+                    <span>React</span>
+                    <span>SQL Server</span>
+                    <span>Python</span>
                 </div>
-                <h1><span class="type-name" style="color: var(--text-color);"></span></h1>
-                <!-- <h1 class="type-name"></h1> -->
-                <h3>Software<span> Developer</span></h3>
-                <div class="button">
-                    <a href="https://api.whatsapp.com/send/?phone=5577999159112" target="_blank" class="btn">Contact</a>
-                    <a href="docs/cvrian1.pdf" download="cv.pdf" class="btn2"><span><i class='bx bxs-file-doc' ></i></span>See my CV</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!--about section design-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/foto.png">
-        </div>
-
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Fascinated in development and data science</h4>
-            <p>&bull; Computer technician and studying Software Engineering.</p>
-            <p>&bull; Studying programming for 5 years</p>
-            <p>&bull; 3 years of technical support experience</p>
-            <p>&bull; Studying Agile Methodologies and Data Engineering</p>
-
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/santos-rian/" target="_blank" class="btn-socials"><span><i
-                            class="bx bxl-linkedin"></i></span></a>
-                <a href="https://github.com/howisrian" target="_blank" class="btn-socials"><span><i
-                            class="bx bxl-github"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=5577999159112" target="_blank"
-                    class="btn-socials"><span><i class="bx bxl-whatsapp"></i></i></a>
-            </div>
-
-        </div>
-    </section>
-
-    <!--about section design-->
-    <section class="services" id="services">
-        <div class="main-text">
-            <h2><span>My</span> Skills</h2>
-            <p>What I am Good In</p>
-        </div>
-        <div class="services-content">
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class='bx bx-support'></i>
-                </div>
-                <h3>Technical Support</h3>
-            </div>
-            
-            <div class="box">
-                <div class="s-icons">
-                    <i class='bx bxs-data'></i>
-                </div>
-                <h3>Data analytics</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                   <i class='bx bx-code-alt'></i>
-                </div>
-                <h3>Code analytics</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class="bx bx-loader-circle"></i>
-                </div>
-                <h3>Agile Frameworks (Scrum)</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class="bx bxl-java"></i>
-                </div>
-                <h3>Java</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class='bx bxl-python'></i>
-                </div>
-                <h3>Python</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class='bx bxl-nodejs'></i>
-                </div>
-                <h3>Nodejs</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class='bx bxl-react' ></i>
-                </div>
-                <h3>React</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class='bx bx-code-curly'></i>
-                </div>
-                <h3>ADVPL</h3>
-            </div>
-
-            
-            <div class="box">
-                <div class="s-icons">
-                    <i class="bx bxl-mongodb"></i>
-                </div>
-                <h3>MongoDB</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class="bx bx-server"></i>
-                </div>
-                <h3>SQL Server</h3>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <i class='bx bx-aperture'></i>
-                </div>
-                <h3>Protheus</h3>
-            </div>
-            
-
-
-
-        </div>
-    </section>
-    
-    <!--portfolio section design-->
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <p>Portfolio</p>
-            <h2>Latest <span>Projects</span></h2>
-        </div>
-
-        <div class="portfolio-content">
-
-            <div class="row">
-                <img src="img/dama-game.png">
-                <div class="layer">
-                    <h5>Dama Game</h5>
-                    <p>Developed in <br><b>HTML • CSS • JavaScript</b></p>
-                    <p>The project is an online checkers game implemented with HTML, CSS, and JavaScript. Players can move pieces on a board, capture the opponent's pieces, and switch turns. There's winner verification, scoring, and an intuitive interface for an immersive gaming experience</p>
-                    <a href="https://github.com/howisrian/damas" target="_blank"><i
-                        class="bx bx-link-external"></i></a>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">Ver projetos</a>
+                    <a href="docs/cvrian1.pdf" download class="btn btn-secondary" data-i18n="hero.ctaResume">Baixar currículo</a>
+                    <a href="https://www.linkedin.com/in/santos-rian/" target="_blank" class="btn btn-ghost">LinkedIn</a>
                 </div>
             </div>
 
-            <div class="row">
-                <img src="img/cardapio.png">
-                <div class="layer">
-                    <h5>Application to consult menu</h5>
-                    <p>Developed in <br><b>React • Node • MongoDB</b></p>
-                    <p>Application developed to be able to consult the menu and including a CRUD for an admin to be able to register, edit and delete the dishes according to the day.</p>
-                    <a href="https://cardapio.xilolite.com.br" target="_blank"><i
-                        class="bx bx-link-external"></i></a>
+            <aside class="hero-card reveal-up delay-1">
+                <div class="hero-card-top">
+                    <img src="img/foto.png" alt="Foto de Rian Santos">
+                    <div>
+                        <h2>Rian Santos</h2>
+                        <p data-i18n="hero.cardRole">Desenvolvedor Protheus | Node | React | SQL</p>
+                    </div>
+                </div>
+
+                <div class="hero-card-grid">
+                    <div>
+                        <strong>+2 anos</strong>
+                        <span data-i18n="hero.metric1">de experiência em TI</span>
+                    </div>
+                    <div>
+                        <strong>ERP + Full Stack</strong>
+                        <span data-i18n="hero.metric2">visão técnica e de negócio</span>
+                    </div>
+                    <div>
+                        <strong data-i18n="hero.metric3Title">Integrações</strong>
+                        <span data-i18n="hero.metric3">REST, SQL, automações</span>
+                    </div>
+                    <div>
+                        <strong data-i18n="hero.metric4Title">Projetos reais</strong>
+                        <span data-i18n="hero.metric4">aplicados ao ambiente corporativo</span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="about section reveal" id="about">
+            <div class="section-header reveal-up">
+                <span class="section-tag" data-i18n="about.tag">Sobre</span>
+                <h2 data-i18n="about.title">Perfil profissional</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal-up">
+                    <p data-i18n="about.p1">
+                        Sou desenvolvedor com experiência em customizações no ERP Protheus, integrações entre sistemas,
+                        automações internas e desenvolvimento web. Trabalho com foco em solução prática, melhoria de processo,
+                        estabilidade e entrega com impacto direto na operação.
+                    </p>
+                    <p data-i18n="about.p2">
+                        Tenho atuação nos módulos Financeiro, Compras, Gestão de Pessoal e Manutenção de Ativos, além de vivência
+                        com SQL, relatórios, APIs e apoio a iniciativas de BI e analytics.
+                    </p>
+                </div>
+
+                <div class="about-highlights reveal-stagger">
+                    <div class="info-card">
+                        <i class='bx bx-code-alt'></i>
+                        <h3 data-i18n="about.card1Title">Desenvolvimento</h3>
+                        <p data-i18n="about.card1Text">Rotinas ADVPL, APIs, aplicações web e automações voltadas ao contexto corporativo.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class='bx bx-transfer-alt'></i>
+                        <h3 data-i18n="about.card2Title">Integrações</h3>
+                        <p data-i18n="about.card2Text">Integração entre ERP, banco de dados, serviços REST e processos internos.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class='bx bx-line-chart'></i>
+                        <h3 data-i18n="about.card3Title">Dados e processos</h3>
+                        <p data-i18n="about.card3Text">Consultas SQL, relatórios gerenciais e melhoria contínua de fluxos operacionais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section reveal" id="skills">
+            <div class="section-header reveal-up">
+                <span class="section-tag" data-i18n="skills.tag">Skills</span>
+                <h2 data-i18n="skills.title">Tecnologias e especialidades</h2>
+            </div>
+
+            <div class="skills-grid reveal-stagger">
+                <div class="skill-group">
+                    <h3 data-i18n="skills.group1">ERP & Back-end</h3>
+                    <div class="chip-list">
+                        <span>ADVPL</span>
+                        <span>TLPP</span>
+                        <span>Protheus</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>REST API</span>
+                        <span data-i18n="skills.integrations">Integrações</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 data-i18n="skills.group2">Front-end</h3>
+                    <div class="chip-list">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span data-i18n="skills.responsive">Interfaces responsivas</span>
+                        <span data-i18n="skills.ux">UX funcional</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 data-i18n="skills.group3">Banco de dados & BI</h3>
+                    <div class="chip-list">
+                        <span>SQL Server</span>
+                        <span data-i18n="skills.sqlqueries">Consultas SQL</span>
+                        <span data-i18n="skills.optimization">Otimização</span>
+                        <span>Power BI</span>
+                        <span>Data Analytics</span>
+                        <span data-i18n="skills.reports">Relatórios</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 data-i18n="skills.group4">Entrega & processo</h3>
+                    <div class="chip-list">
+                        <span data-i18n="skills.testing">Testes</span>
+                        <span data-i18n="skills.docs">Documentação</span>
+                        <span data-i18n="skills.support">Suporte técnico</span>
+                        <span data-i18n="skills.requirements">Levantamento de requisitos</span>
+                        <span data-i18n="skills.improvement">Melhoria de processos</span>
+                        <span>Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section reveal" id="projects">
+            <div class="section-header projects-header reveal-up">
+                <div>
+                    <span class="section-tag" data-i18n="projects.tag">Projetos</span>
+                    <h2 data-i18n="projects.title">Projetos</h2>
                 </div>
             </div>
 
-            <div class="row">
-                <img src="img/tenis-page.jpeg">
-                <div class="layer">
-                    <h5>Tenis Page</h5>
-                    <p>Developed in<br> <b>HTML • CSS</b></p>
-                    <br>
-                    <p>Project built in order to train my skills, layout obtained in the DevMentor challenge</p>
-                    <a href="https://github.com/howisrian/pagina-tenis" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
+            <div class="projects-grid reveal-stagger">
+                <article class="project-card project-featured">
+                    <div class="project-image placeholder-image">
+                        <div>
+                            <i class='bx bx-image-add'></i>
+                            <strong data-i18n="projects.image1Title">Imagem em breve</strong>
+                            <span data-i18n="projects.image1Text">Espaço reservado para imagem, dashboard ou tela principal</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-label" data-i18n="projects.highlight">Projeto destaque</span>
+                            <span class="project-type" data-i18n="projects.corporate">Corporativo</span>
+                        </div>
+                        <h3>ScanTag — Sistema de Gestão de Ativos</h3>
+                        <p data-i18n="projects.xilo.desc">
+                            Sistema voltado ao controle de ativos, histórico de manutenção, geração de etiquetas com QR Code,
+                            leitura por câmera e consulta de documentação técnica integrada ao ambiente corporativo.
+                        </p>
+
+                        <div class="project-columns">
+                            <div>
+                                <h4 data-i18n="projects.delivered">O que entreguei</h4>
+                                <ul>
+                                    <li data-i18n="projects.xilo.item1">Fluxo de consulta e gestão de ativos</li>
+                                    <li data-i18n="projects.xilo.item2">Geração e leitura de QR Code</li>
+                                    <li data-i18n="projects.xilo.item3">Integração com banco SQL Server / Protheus</li>
+                                    <li data-i18n="projects.xilo.item4">Estrutura para visualização de documentos do ativo</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 data-i18n="projects.stackUsed">Stack usada</h4>
+                                <div class="stack-box">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>Express</span>
+                                    <span>SQL Server</span>
+                                    <span>Integração Protheus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image placeholder-image compact">
+                        <div>
+                            <i class='bx bx-image-add'></i>
+                            <strong data-i18n="projects.image2Title">Imagem em breve</strong>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-label" data-i18n="projects.fullstack">Projeto full stack</span>
+                        </div>
+                        <h3>SIN ERP</h3>
+                        <p data-i18n="projects.sin.desc">
+                            ERP em evolução com módulos administrativos, autenticação, cadastros, movimentações e estrutura preparada
+                            para crescimento por rotinas e módulos.
+                        </p>
+                        <h4 data-i18n="projects.stackUsed">Stack usada</h4>
+                        <div class="stack-box small">
+                            <span>FastAPI</span>
+                            <span>React</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>Alembic</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image placeholder-image compact">
+                        <div>
+                            <i class='bx bx-image-add'></i>
+                            <strong data-i18n="projects.image3Title">Imagem em breve</strong>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-label" data-i18n="projects.erp">Projeto ERP</span>
+                        </div>
+                        <h3 data-i18n="projects.protheus.title">Customizações Protheus</h3>
+                        <p data-i18n="projects.protheus.desc">
+                            Desenvolvimento de rotinas personalizadas em ADVPL para validações, automações, melhorias operacionais,
+                            integrações e adequações de processos internos.
+                        </p>
+                        <h4 data-i18n="projects.stackUsed">Stack usada</h4>
+                        <div class="stack-box small">
+                            <span>ADVPL</span>
+                            <span>TLPP</span>
+                            <span>Protheus</span>
+                            <span>SQL Server</span>
+                            <span>WebServices / APIs</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image placeholder-image compact">
+                        <div>
+                            <i class='bx bx-image-add'></i>
+                            <strong data-i18n="projects.image4Title">Imagem em breve</strong>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-label" data-i18n="projects.web">Projeto web</span>
+                        </div>
+                        <h3 data-i18n="projects.menu.title">Sistema de Cardápio</h3>
+                        <p data-i18n="projects.menu.desc">
+                            Aplicação para consulta de cardápio com fluxo administrativo para cadastro, edição e organização dos pratos
+                            por data, facilitando a manutenção do conteúdo.
+                        </p>
+                        <h4 data-i18n="projects.stackUsed">Stack usada</h4>
+                        <div class="stack-box small">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Firebase / Auth</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="experience section reveal" id="experience">
+            <div class="section-header reveal-up">
+                <span class="section-tag" data-i18n="experience.tag">Experiência</span>
+                <h2 data-i18n="experience.title">Trajetória profissional</h2>
+            </div>
+
+            <div class="timeline reveal-stagger">
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period" data-i18n="experience.job1Period">Fev 2025 — Atual</span>
+                        <h3 data-i18n="experience.job1Title">Desenvolvedor | Xilolite S/A</h3>
+                        <p data-i18n="experience.job1Desc">
+                            Desenvolvimento e manutenção de rotinas no Protheus, testes, análise de requisitos, documentação,
+                            suporte técnico e participação em melhorias e automações de processos internos.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period" data-i18n="experience.job2Period">Mai 2024 — Fev 2025</span>
+                        <h3 data-i18n="experience.job2Title">Assistente Administrativo TI | Xilolite S/A</h3>
+                        <p data-i18n="experience.job2Desc">
+                            Apoio à operação de TI, suporte aos usuários, organização de demandas e participação na sustentação do ambiente.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period" data-i18n="experience.job3Period">Mai 2023 — Mai 2024</span>
+                        <h3 data-i18n="experience.job3Title">Jovem Aprendiz — Setor de TI | Xilolite S/A</h3>
+                        <p data-i18n="experience.job3Desc">
+                            Suporte técnico inicial, atendimento interno e evolução prática no ambiente corporativo de tecnologia.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section reveal" id="contact">
+            <div class="contact-card reveal-up">
+                <div>
+                    <span class="section-tag" data-i18n="contact.tag">Contato</span>
+                    <h2 data-i18n="contact.title">Vamos conversar</h2>
+                    <p data-i18n="contact.text">
+                        Caso tenha uma oportunidade alinhada com desenvolvimento, ERP, integrações ou projetos full stack,
+                        estou aberto para conversar.
+                    </p>
+                </div>
+
+                <div class="contact-list">
+                    <a href="mailto:riansantos.dev@gmail.com"><i class='bx bx-envelope'></i> riansantos.dev@gmail.com</a>
+                    <a href="https://api.whatsapp.com/send/?phone=5577999159112" target="_blank"><i class='bx bxl-whatsapp'></i> WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/santos-rian/" target="_blank"><i class='bx bxl-linkedin-square'></i> LinkedIn</a>
+                    <a href="https://github.com/howisrian" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
                 </div>
             </div>
- 
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!--experience section design-->
-    <section class="experience" id="experience">
-        <div class="main-text">
-            <p>Professional</p>
-            <h2><span>Work</span> Experiences</h2>
-        </div>
+    <footer class="footer">
+        <p data-i18n="footer.text">© 2026 Rian Santos.</p>
+        <a href="#home" id="top"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
 
-        <div class="timeline">
-            <div class="container">
-                <img src="img/xilolite_logo.png     ">
-                <div class="text-box">
-                    <small>2023 - <span>Now</span></small>
-                    <h5><b><span>IT Assistant</span> - Xilolite S/A </h5></b>
-                    <p>I developed skills that enabled me to provide effective technical support, proactively resolve issues, ensure the security and integrity of systems, and keep IT infrastructure running efficiently. These competencies are essential to ensure the continuous and effective operation of information technology systems in any organization.</p>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="">
-                <div class="text-box">
-                    <small>2023</small>
-                    <h5><b><span>Financial Operator</span></b> - Confeitaria Nanda Arteira</h5>
-                    <p>During my tenure I learned how to manage resources efficiently, cultivate customer relationships, optimize product flows, create effective marketing strategies, and produce impactful visual materials. These skills are crucial to ensure the success and sustainability of organizations in a dynamic and competitive business environment.</p>
-                </div>
-            </div>
-
-            <div class="container">
-                <img src="img/magnetron_logo.png">
-                <div class="text-box">
-                    <small>2020 - 2022</small>
-                    <h5><b><span>Electronics Technician</span> - Eletronica Magnetron </h5></b>
-                    <p>As a technician I developed a good reasoning for problem solving, in addition to developing a database for the company.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--end section design-->
-    <section class="end">
-        <div class="last-text">
-            <p>Copyright &#169; 2024 by Rian Santos. All rights reserved.</p>
-        </div>
-    </section>
-
-    <div id="top">
-        <a href="#home"><i class="bx bx-up-arrow-alt "></i></a>
-    </div>
-
-    <!--custom js link-->
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
